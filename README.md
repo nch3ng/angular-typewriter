@@ -17,8 +17,8 @@ Define your angular app & controller
 </html>
 ~~~
 
-With the controller:
-EX:
+With the controller:  
+EX:  
 ~~~ html
 <span class="typewriter" typewriter type-speed="200" loop=true loop-delay="1000" custom-style=false cursor=true shell=false>Welcome, type-write your message here!</span>
 ~~~
