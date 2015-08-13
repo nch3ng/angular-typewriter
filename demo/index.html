@@ -1,0 +1,39 @@
+<html ng-app="demoapp">
+<head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+  <script src="../typewriter.js"></script>
+  <script src="demo.js"></script>
+  <link rel="stylesheet" type="text/css" href="../typewriter.css">
+  <style>
+    .shell-input {
+      display: inline-block; width:500px; height:20px; background-color: #000000;margin:auto; border-radius:10px;padding:20px;
+    }
+    .title {
+      padding-top:20px;display:inline-block;float:left;margin-bottom:5px;font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+    }
+  </style>
+</head>
+  <body ng-controller="mainCtrl" style="text-align: center; padding-top:100px;">  
+    <div style="width:500px;display:inline-block;">
+      <span class="title">Loop</span>
+      <span class="shell-input">
+        <span class="typewriter" typewriter type-speed="200" loop=true loop-delay="1000" custom-style=false cursor=true shell=false>Welcome, type-write your message here!</span>
+      </span>
+      <span class="title">Shell symbol without loop</span>
+      <span class="shell-input" style="text-align:left">
+        <span class="typewriter" typewriter type-speed="100" loop=false loop-delay="1000" custom-style=false cursor=true shell=true>Welcome, type-write your message here!</span>
+      </span>
+
+      <span class="title">Messages one line loop</span>
+      <span class="shell-input" style="text-align:left;">
+        <span class="typewriter" typewriter type-speed="150" loop=true messages="sentences" loop-delay="1000" custom-style=false cursor=true shell=false newline=false>Welcome, type-write your message here!</span>
+      </span>
+
+      <span class="title">Messages multi-line loop</span>
+      <span class="shell-input" style="text-align:left; height:80px;">
+        <span class="typewriter" typewriter type-speed="100" loop=true messages="sentences" loop-delay="1000" custom-style=false cursor=true shell=false newline=true>Welcome, type-write your message here!</span>
+      </span>
+    </div>
+  </body>
+</html>
