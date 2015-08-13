@@ -18,10 +18,14 @@ Define your angular app & controller
 ~~~
 
 With the controller:  
-EX:  
+Ex:  
 ~~~ html
 <span class="typewriter" typewriter type-speed="200" loop=true loop-delay="1000" custom-style=false cursor=true shell=false>Welcome, type-write your message here!</span>
-~~~
+~~~  
+Or assign texts in message array
+~~~ html
+<span class="typewriter" typewriter type-speed="200" loop=true loop-delay="1000" custom-style=false cursor=true shell=false messages="sentences"></span>
+~~~  
 
 Options:
 
@@ -49,4 +53,9 @@ Options:
 In your javascript:
 ~~~ javascript
 var demoApp = angular.module("demoapp", ["angular.typewriter"]);
+
+demoApp.controller("mainCtrl", ["$scope", function($scope){
+  
+  $scope.sentences = ["This is the first sentence ...", "This is the second sentence ... ", "This is the third sentence ...", "This is the forth sentence ..." ];
+}]);
 ~~~
