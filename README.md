@@ -1,6 +1,8 @@
 #angular-typewriter
 [Demo](http://codepen.io/boo0330/pen/GJLmZy)</b> in Codepen
 
+<img src="http://i359.photobucket.com/albums/oo37/Nate_Cheng/Screen%20Shot%202015-08-12%20at%2011.15.04%20PM_zpsdx0hneoq.png" width="70%">  
+
 <b>Prerequisites:</b> angular.js
 
 Include the typewriter.js and typewriter.css in the HTML file
